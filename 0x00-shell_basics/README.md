@@ -19,3 +19,5 @@
 9-firstdirdeletion: this will delete the directory my_first_directory from /tmp
 
 10-back: This will change the working directory to the previous one
+
+11-lists: This will list the contents of current directory, parent directory and /boot directory including the hidden files
