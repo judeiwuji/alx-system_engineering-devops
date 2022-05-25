@@ -35,3 +35,5 @@
 102-tree: this will create the following directories: welcome/, welcome/to, welcome/to/school
 
 103-commas: This will list all files including hidden files in current directory separated with comma.
+
+school.mgc: this together with file command detects school files
