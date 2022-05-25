@@ -29,3 +29,5 @@
 14-copy_html: this will copy html files from current directory to parent directory only if the file does not exists or is newer than the version in the parent directory
 
 100-lets_move: this will move all files starting with uppercase to /tmp/u directory
+
+101-clean_emacs: this will delete all files ending with ~
