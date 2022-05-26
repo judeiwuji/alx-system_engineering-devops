@@ -24,3 +24,6 @@ This script will add execution permission to the owner, the group owner and othe
 
 [8-James_Bond](./8-James_Bond)
 This script will grant read,write and execute permission only to Other users (007)
+
+[9-John_Doe](./9-John_Doe)
+This script grants read,write,execute to user, read and execute to group owner and write, execute to other users
