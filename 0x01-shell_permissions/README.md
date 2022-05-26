@@ -12,3 +12,6 @@ This script will change the owner of the file hello to betty
 
 [4-empty](./4-empty)
 This script will create an empty file hello
+
+[5-execute](./5-execute)
+This script will add execute permission to the owner of file hello
