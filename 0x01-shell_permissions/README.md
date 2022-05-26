@@ -37,3 +37,5 @@ This script will add execute permission to all subdirectories of the current dir
 [12-directory_permissions](./12-directory_permissions)
 This script will create a directory named my_dir, with permission 751 in the working directory
 
+[13-change_group](./13-change_group)
+This script will change hello file group to school
