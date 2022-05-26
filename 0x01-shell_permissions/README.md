@@ -48,3 +48,6 @@ This will change the group and owner of _hello to vincent and staff
 
 [102-if_only](./102-if_only)
 This will change the owner of hello to betty only the owned user is guillaume
+
+[103-Star_Wars](./103-Star_Wars)
+This script will play the StarWars IV episode in the terminal
