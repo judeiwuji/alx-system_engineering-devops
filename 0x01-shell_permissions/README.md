@@ -42,3 +42,6 @@ This script will change hello file group to school
 
 [100-change_owner_and_group](./100-change_owner_and_group)
 This script will change the owner to vincent and the group owner to staff for all the files and directories in the working directory
+
+[101-symbolic_link_permissions](./101-symbolic_link_permissions)
+This will change the group and owner of _hello to vincent and staff
