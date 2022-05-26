@@ -27,3 +27,6 @@ This script will grant read,write and execute permission only to Other users (00
 
 [9-John_Doe](./9-John_Doe)
 This script grants read,write,execute to user, read and execute to group owner and write, execute to other users
+
+[10-mirror_permissions](./10-mirror_permissions)
+This script will set the mode of file hello same as olleh's mode
