@@ -9,3 +9,6 @@ This script will print all the groups the current user is part of.
 
 [3-new_owner](./3-new_owner)
 This script will change the owner of the file hello to betty
+
+[4-empty](./4-empty)
+This script will create an empty file hello
