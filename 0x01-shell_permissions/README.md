@@ -7,5 +7,5 @@ This script the effective username of the current user
 2-groups
 This script will print all the groups the current user is part of.
 
-3-new_owner
+[3-new_owner](./3-new_owner)
 This script will change the owner of the file hello to betty
