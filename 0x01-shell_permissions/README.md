@@ -15,3 +15,7 @@ This script will create an empty file hello
 
 [5-execute](./5-execute)
 This script will add execute permission to the owner of file hello
+
+[6-multiple_permissions](./6-multiple_permissions)
+This script will add execute perssion to the owner and the group owner, and read permission to other users, to the file hello
+
