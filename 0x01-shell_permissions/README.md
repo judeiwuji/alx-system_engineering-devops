@@ -45,3 +45,6 @@ This script will change the owner to vincent and the group owner to staff for al
 
 [101-symbolic_link_permissions](./101-symbolic_link_permissions)
 This will change the group and owner of _hello to vincent and staff
+
+[102-if_only](./102-if_only)
+This will change the owner of hello to betty only the owned user is guillaume
