@@ -30,3 +30,6 @@ This script grants read,write,execute to user, read and execute to group owner a
 
 [10-mirror_permissions](./10-mirror_permissions)
 This script will set the mode of file hello same as olleh's mode
+
+[11-directories_permissions](./11-directories_permissions)
+This script will add execute permission to all subdirectories of the current directory for the owner, the group owner and all other users without affecting regular files.
