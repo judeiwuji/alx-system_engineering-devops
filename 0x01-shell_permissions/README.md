@@ -21,3 +21,6 @@ This script will add execute perssion to the owner and the group owner, and read
 
 [7-everybody](./7-everybody)
 This script will add execution permission to the owner, the group owner and other users, to the file hello
+
+[8-James_Bond](./8-James_Bond)
+This script will grant read,write and execute permission only to Other users (007)
