@@ -1,2 +1,3 @@
 #!/bin/bash
-cat list | sort | uniq -u
+read -d '' list
+echo "$list" | sort | uniq -u
