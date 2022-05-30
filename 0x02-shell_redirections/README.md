@@ -78,4 +78,7 @@ This script will display all users and their home directories, sorted by users
 [100-empty_casks](./100-empty_casks)  
 This script will display all empty files and directories in the current directory and all sub-directories  
 
+[101-gifs](./101-gifs)
+This script will display all the files with a .gif extension in the current directory and all its sub-directories  
+
 
