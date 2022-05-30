@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -alR | find -not -name '.' -type d | wc -l
