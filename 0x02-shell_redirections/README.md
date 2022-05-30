@@ -72,4 +72,7 @@ This script will remove all letters c and C from input
 [21-reverse](./21-reverse)
 This script will reverse its input  
 
+[22-users_and_homes](./22-users_and_homes)  
+This script will display all users and their home directories, sorted by users  
+
 
