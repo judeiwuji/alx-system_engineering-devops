@@ -68,3 +68,8 @@ This script will replace all characters A and c from input to Z and e respective
 
 [20-hiago](./20-hiago)  
 This script will remove all letters c and C from input
+
+[21-reverse](./21-reverse)
+This script will reverse its input  
+
+
