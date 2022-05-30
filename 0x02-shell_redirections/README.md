@@ -66,4 +66,5 @@ This script will display lines of the file "/etc/ssh/sshd_config" starting with 
 [19-AZ](./19-AZ)
 This script will replace all characters A and c from input to Z and e respectively  
 
-
+[20-hiago](./20-hiago)  
+This script will remove all letters c and C from input
