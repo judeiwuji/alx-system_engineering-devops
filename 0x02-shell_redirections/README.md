@@ -40,3 +40,10 @@ This script will count the number of directories and sub-directories in the curr
 This script will display the 10 newest files in the current directory  
 - One file per line  
 - Sorted from the newest to the oldest
+
+[13-unique](./13-unique)  
+This script will take list of words as input and print only words that appear exactly once.  
+Requirements  
+- Input format: One line, One word
+- Output format: One line, one word
+- Words should be sorted
