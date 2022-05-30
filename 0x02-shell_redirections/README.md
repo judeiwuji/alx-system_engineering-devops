@@ -13,3 +13,6 @@ This script will display the contents of /etc/passwd and /etc/hosts
 [4-lastlines](./4-lastlines)
 This script will display the last 10 lines of /etc/passwd
 
+[5-firstlines](./5-firstlines)
+This script will display the first 10 lines of /etc/passwd
+
