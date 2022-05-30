@@ -63,4 +63,7 @@ This script will display all the lines in the file /etc/passwd that do not conta
 [18-letteronly](./18-letteronly)
 This script will display lines of the file "/etc/ssh/sshd_config" starting with a letter  
 
+[19-AZ](./19-AZ)
+This script will replace all characters A and c from input to Z and e respectively  
+
 
