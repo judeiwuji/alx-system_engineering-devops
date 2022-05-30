@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -empty | cut --complement -c 1,2 | tr '/' '\n'

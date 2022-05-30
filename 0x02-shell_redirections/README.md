@@ -75,4 +75,7 @@ This script will reverse its input
 [22-users_and_homes](./22-users_and_homes)  
 This script will display all users and their home directories, sorted by users  
 
+[100-empty_casks](./100-empty_casks)  
+This script will display all empty files and directories in the current directory and all sub-directories  
+
 
