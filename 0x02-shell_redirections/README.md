@@ -51,4 +51,7 @@ Requirements
 [14-findthatword](./14-findthatword)  
 This script will display lines that contain the pattern "root" from the file /etc/passwd  
 
+[15-countthatword](./15-countthatword)
+This script will display number of lines that contain the pattern "bin" in the file /etc/passwd  
+
 
