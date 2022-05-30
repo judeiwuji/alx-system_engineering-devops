@@ -46,4 +46,9 @@ This script will take list of words as input and print only words that appear ex
 Requirements  
 - Input format: One line, One word
 - Output format: One line, one word
-- Words should be sorted
+- Words should be sorted  
+
+[14-findthatword](./14-findthatword)  
+This script will display lines that contain the pattern "root" from the file /etc/passwd  
+
+
