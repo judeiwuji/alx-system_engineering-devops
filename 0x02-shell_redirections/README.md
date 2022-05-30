@@ -26,4 +26,7 @@ This script will create a file name \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) conta
 This script will write into ls_cwd_content the result of the commad ls -la. If the file ls_cwd_content already exists, it will be overwritten. if the file ls_cwd_content does not exist, it will be created.
 
 [9-duplicate_last_line](./9-duplicate_last_line)
-This script will duplicate the last line of the file iacta 
+This script will duplicate the last line of the file iacta
+
+[10-no_more_js](./10-no_more_js)
+This script will delete all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders 
