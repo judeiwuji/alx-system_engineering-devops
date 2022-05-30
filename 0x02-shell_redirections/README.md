@@ -23,4 +23,7 @@ This script will display the third line of the file iacta
 This script will create a file name \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line
 
 [8-cwd_state](./8-cwd_state)
-This script will write into ls_cwd_content the result of the commad ls -la. If the file ls_cwd_content already exists, it will be overwritten. if the file ls_cwd_content does not exist, it will be created. 
+This script will write into ls_cwd_content the result of the commad ls -la. If the file ls_cwd_content already exists, it will be overwritten. if the file ls_cwd_content does not exist, it will be created.
+
+[9-duplicate_last_line](./9-duplicate_last_line)
+This script will duplicate the last line of the file iacta 
