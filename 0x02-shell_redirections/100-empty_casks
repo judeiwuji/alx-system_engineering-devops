@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(find . -empty | cut --complement -c 1,2 | tr '/' '\n')
+echo "$(find . -empty | cut --complement -c 1,2 | tr '/' '\n' | sort | uniq -u)"
