@@ -81,7 +81,9 @@ This script will display all empty files and directories in the current director
 [101-gifs](./101-gifs)
 This script will display all the files with a .gif extension in the current directory and all its sub-directories  
 
+[102-acrostic](./102-acrostic)
+This script will decode acrostics that use the first letter of each line
+
 [103-the_biggest_fan](./103-the_biggest_fan)
 This script will parse web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests  
-
 
