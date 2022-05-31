@@ -38,4 +38,8 @@ This script will print the result of POWER divided by DIVIDE, followed by a new 
 [10-love_exponent_breath](./10-love_exponent_breath)  
 This script will display the result of BREATH to the power LOVE  
 
+[11-binary_to_decimal](./11-binary_to_decimal)
+This script will convert a number from base 2 to base 10.  
+- The number in base 2 is stored in the environment variable BINARY
+- The script should display the number in base 10, followed by a new line
 
