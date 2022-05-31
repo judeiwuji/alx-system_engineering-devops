@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e {{a..z}{a..z}}"\n" | tr -d '{}' | grep -i "oo|?\n" -v
+echo -e {a..z}{a..z}"\n" | tr -d " " | grep "oo" -v
