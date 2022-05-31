@@ -55,4 +55,9 @@ This script will print all possible combinations of two letters, except oo.
 This script will print the number with two decimal places, followed by a new line.
 The number will be stored in the environment variable NUM.
 
+[100-decimal_to_hexadecimal](./100-decimal_to_hexadecimal)
+This script will convert a number from base 10 to base 16  
+- The number in base 10 is stored in the environment variable DECIMAL
+- The script should display the number in base 16, followed by a new line
+
 
