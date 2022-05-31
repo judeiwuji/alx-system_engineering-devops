@@ -35,4 +35,7 @@ This script will print th result of the addition of 128 with the value stored in
 This script will print the result of POWER divided by DIVIDE, followed by a new line.  
 - POWER and DIVIDE are environment variables  
 
+[10-love_exponent_breath](./10-love_exponent_breath)  
+This script will display the result of BREATH to the power LOVE  
+
 
