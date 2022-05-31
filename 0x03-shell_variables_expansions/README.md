@@ -18,4 +18,9 @@ This script will list environment variables
 [5-local_variables](./5-local_variables)  
 This script will list all local variables and environment variables, and functions  
 
+[6-create_local_variable](./6-create_local_variable)  
+This script will create a new local variable  
+- Name: BEST  
+- Value: School  
+
 
