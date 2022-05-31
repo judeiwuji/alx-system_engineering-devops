@@ -30,3 +30,9 @@ This script will create an new global variable.
 
 [8-true_knowledge](./8-true_knowledge)
 This script will print th result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line
+
+[9-divide_and_rule](./9-divide_and_rule)
+This script will print the result of POWER divided by DIVIDE, followed by a new line.  
+- POWER and DIVIDE are environment variables  
+
+
