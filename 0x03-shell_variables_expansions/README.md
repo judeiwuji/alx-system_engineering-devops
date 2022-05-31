@@ -12,4 +12,7 @@ This script will add /action the PATH global variable. It is the last directory 
 [3-paths](./3-paths)  
 This script will count the number of directories in the PATH  
 
+[4-global_variables](./4-global_variables)  
+This script will list environment variables  
+
 
