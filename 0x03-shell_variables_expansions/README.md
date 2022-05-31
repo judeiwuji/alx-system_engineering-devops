@@ -63,4 +63,7 @@ This script will convert a number from base 10 to base 16
 [101-rot13](./101-rot13)
 This script will encodes and decodes text using the rot13 encryption. Assume ASCII.  
 
+[102-odd](./102-odd)
+This script will print every odd line from the input, starting with the first line.
+
 
