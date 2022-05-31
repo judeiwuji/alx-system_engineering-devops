@@ -23,4 +23,9 @@ This script will create a new local variable
 - Name: BEST  
 - Value: School  
 
+[7-create_global_variable](./7-create_global_variable)
+This script will create an new global variable.  
+- Name: BEST
+- Value: School  
+
 
