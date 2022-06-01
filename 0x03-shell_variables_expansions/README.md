@@ -66,4 +66,10 @@ This script will encodes and decodes text using the rot13 encryption. Assume ASC
 [102-odd](./102-odd)
 This script will print every odd line from the input, starting with the first line.
 
+[103-water_and_stir](./103-water_and_stir)
+This script will add two numbers stored in the environment variables WATER and STIR and prints the result.  
+- WATER is in base water
+- STIR is in base stir.
+- The result should be in base bestchol
+
 
