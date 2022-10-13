@@ -6,6 +6,7 @@
 hours=0
 while [ $hours -le 12 ]
 do
+	echo "Hour: $hours"
 	minutes=1
 	while [ $minutes -le 59 ]
 	do
@@ -13,8 +14,4 @@ do
 		((++minutes))
 	done;
 	((++hours))
-	if [ "$hours" -le 12 ]
-	then
-		echo "Hour: $hours"
-	fi
 done;
