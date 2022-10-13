@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# displays numbers from 1 to 100.
+
+for ((i=1;i<=100;i++)); do
+	mod3=$((i % 3))
+	mod5=$((i % 5))
+	if [ $mod3 -eq 0 ] && [ $mod5 -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $mod3 -eq 0 ]
+	then
+		echo "Fizz"
+	elif [ $mod5 -eq 0 ]
+	then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+done;
