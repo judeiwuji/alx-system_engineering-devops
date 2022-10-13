@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# displays the content of the file /etc/passwd, using the while loop + IFS.
+filename="/etc/passwd"
+
+while IFS= read -r line
+do
+	username=$(echo "$line" | cut -d ':' -f 1)
+	password=$(echo "$line" | cut -d ':' -f 2)
+	userID=$(echo "$line" | cut -d ':' -f 3)
+	groupID=$(echo "$line" | cut -d ':' -f 4)
+	userIdInfo=$(echo "$line" | cut -d ':' -f 5)
+	homeDir=$(echo "$line" | cut -d ':' -f 6)
+	commandShell=$(echo "$line" | cut -d ':' -f 7)
+
+	echo "The user $username is part of the $groupID gang, lives in $homeDir and rides $commandShell. $userID's place is protected by the passcode $password, more info about the user here: $userIdInfo"
+done < "$filename";
