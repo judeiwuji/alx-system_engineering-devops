@@ -14,8 +14,8 @@ elif [ "$1" = "restart" ]
 then
 	sudo pkill -f manage_my_process &
 	rm "/var/run/my_process.pid"
-	sudo ./manage_my_process &
 	echo $$ > "/var/run/my_process.pid"
+	sudo ./manage_my_process &
 	echo "manage_my_process restarted"
 else
 	echo "Usage: manage_my_process {start|stop|restart}"
