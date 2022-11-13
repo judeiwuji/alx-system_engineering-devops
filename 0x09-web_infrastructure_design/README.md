@@ -7,4 +7,4 @@ A one server web infrastructure that hosts the website that is reachable via www
 A three server web infrastructure that hosts the website www.foobar.com.
 
 [2-secured_and_monitored_web_infrastructure](./2-secured_and_monitored_web_infrastructure)
-a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
+A three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
