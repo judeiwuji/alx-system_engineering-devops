@@ -1,4 +1,12 @@
 # Client configuration file (w/ Puppet)
+exec {'puppet module install':
+  command => '/usr/bin/puppet module install puppetlabs-stdlib --version 4.9.1'
+}
+
+package {'puppetlabs-stdlib':
+  ensure  => 'installed',
+  require => Exec['puppet module install']
+}
 
 file{'/etc/ssh/ssh-config':
   ensure  => 'present',
