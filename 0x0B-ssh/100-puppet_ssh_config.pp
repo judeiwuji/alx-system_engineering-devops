@@ -1,12 +1,4 @@
 # Client configuration file (w/ Puppet)
-exec {'puppet module install':
-  command => '/usr/bin/puppet module install puppetlabs-stdlib --version 4.9.1'
-}
-
-package {'puppetlabs-stdlib':
-  ensure  => 'installed',
-  require => Exec['puppet module install']
-}
 
 file{'/etc/ssh/ssh-config':
   ensure  => 'present',
@@ -16,8 +8,8 @@ file{'/etc/ssh/ssh-config':
 
 file_line {'Turn off passwd auth':
   ensure  => 'present',
-  line    => 'IdentitiesOnly yes',
-  match   => '^IdentitiesOnly',
+  line    => 'PasswordAuthentication no',
+  match   => '^PasswordAuthentication',
   path    => '/etc/ssh/ssh-config',
   require => File['/etc/ssh/ssh-config']
 }
