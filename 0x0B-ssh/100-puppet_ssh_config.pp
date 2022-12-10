@@ -6,12 +6,18 @@ User ubuntu
 '
 }
 
-exec{'Turn off passwd auth':
-  command => '/usr/bin/echo "IdentitiesOnly yes" >> /etc/ssh/ssh-config',
+file_line {'Turn off passwd auth':
+  ensure  => 'present',
+  line    => 'IdentitiesOnly yes',
+  match   => '^IdentitiesOnly',
+  path    => '/etc/ssh/ssh-config',
   require => File['/etc/ssh/ssh-config']
 }
 
-exec{'Declare identity file':
-  command => '/usr/bin/echo "IdentityFile ~/.ssh/school" >> /etc/ssh/ssh-config',
+file_line {'Declare identity file':
+  ensure  => 'present',
+  line    => 'IdentityFile ~/.ssh/school',
+  match   => '^IdentityFile'
+  path    => '/etc/ssh/ssh-config',
   require => File['/etc/ssh/ssh-config']
 }
