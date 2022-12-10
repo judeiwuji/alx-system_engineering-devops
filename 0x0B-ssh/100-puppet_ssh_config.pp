@@ -2,6 +2,8 @@
 
 file{'/etc/ssh/ssh-config':
   ensure  => 'present',
+  content => 'Host 63960-web-01
+	User ubuntu'
 }
 
 file_line {'Turn off passwd auth':
