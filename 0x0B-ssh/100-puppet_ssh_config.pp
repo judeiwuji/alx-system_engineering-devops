@@ -5,16 +5,14 @@ file{'/etc/ssh/ssh-config':
   content => 'Host 63960-web-01
 	User ubuntu'
 }
-
-file_line {'Turn off passwd auth':
+-> file_line {'Turn off passwd auth':
   ensure  => 'present',
-  line    => 'PasswordAuthentication no',
-  match   => '^PasswordAuthentication',
+  line    => 'IdentitiesOnly yes',
+  match   => '^IdentitiesOnly',
   path    => '/etc/ssh/ssh-config',
   require => File['/etc/ssh/ssh-config']
 }
-
-file_line {'Declare identity file':
+-> file_line {'Declare identity file':
   ensure  => 'present',
   line    => 'IdentityFile ~/.ssh/school',
   match   => '^IdentityFile',
