@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure Nginx server so that /redirect_me is redirecting to another page.
+sed -e 's/[&%\\]/\\&/g' \
+    -e '$!s/$/\\/' \
+    -e '1s/^/s%string_to_replace%/' \
+     -e '$s/$/%g/' <<<$replacement |
+# pass to second sed instance
+sed -f - "$file"

@@ -18,4 +18,4 @@ username=$3
 private_key=$4
 
 # copy file securely
-scp -i "$private_key" "$target" "$username"@"$host":~/
+scp -o 'StrictHostKeyChecking accept-new'  -i "$private_key" "$target" "$username"@"$host":~/
