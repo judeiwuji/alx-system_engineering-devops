@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # Configure Nginx server so that /redirect_me is redirecting to another page.
-sed -e 's/[&%\\]/\\&/g' \
-    -e '$!s/$/\\/' \
-    -e '1s/^/s%string_to_replace%/' \
-     -e '$s/$/%g/' <<<$replacement |
-# pass to second sed instance
-sed -f - "$file"
+sudo chmod -R $USER:$USER /etc/nginx/sites-available/
+sed -z 's/a #location ~ \.ht {\n#       deny all;\n#}/location = /redirect {\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}/' -i /etc/nginx/sites-available/default
