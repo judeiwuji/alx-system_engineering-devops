@@ -8,4 +8,5 @@ config="
 "
 sudo chmod -R "$USER":"$USER" /etc/nginx/sites-available/
 sudo sed -i "/server_name _;/c\ $config" /etc/nginx/sites-available/default
+sudo chmod -R "$USER":"$USER" /var/www/
 echo "Ceci n'est pas une page" > /var/www/html/404.html
