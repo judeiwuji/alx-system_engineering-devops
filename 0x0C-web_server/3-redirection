@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Configure Nginx server so that /redirect_me is redirecting to another page.
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/
-sudo sed -i "/server_name _;/c \tserver_name _;\n\tlocation = /redirect {\n\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \n\t}" /etc/nginx/sites-available/default
+sudo sed -i "/server_name _;/c\ \tserver_name _;\n\tlocation = /redirect {\n\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \n\t}" /etc/nginx/sites-available/default
 # restart nginx
 sudo service nginx restart
