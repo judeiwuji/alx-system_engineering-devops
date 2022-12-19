@@ -1,7 +1,7 @@
 # automate the task of creating a custom HTTP header response
 
 exec {'sudo chown -R':
-  command => '/usr/bin/sudo /usr/bin/chown -R "$USER":"$USER" /etc/nginx/sites-available/'
+  command => "/usr/bin/sudo /usr/bin/chown -R ${hostname}:${hostname} /etc/nginx/sites-available/"
 }
 
 file {'/etc/nginx/sites-available/default':
