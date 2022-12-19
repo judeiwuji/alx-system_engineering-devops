@@ -1,6 +1,6 @@
 # automate the task of creating a custom HTTP header response
 file {'/etc/nginx/sites-available/default':
-  ensure => 'present'
+  ensure => 'file'
 }
 
 -> file_line{'X-Served-By':
