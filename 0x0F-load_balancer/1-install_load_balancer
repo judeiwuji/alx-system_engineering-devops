@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Install your load balancer
+# update local package repo
+sudo apt-get update
+# install haproxy
+sudo apt-get install haproxy -y
+config="
+frontend plotterwave
+    bind *:80
+    mode http
+    default_backend plotterwave_backend
+
+backend plotterwave_backend
+    balance roundrobin
+    server 63960-web-01 18.210.15.214:80 check
+    server 63960-web-02 54.237.76.221:80 check
+"
+sudo chown -R "$USER":"$USER" /etc/haproxy/
+echo "$config" >> /etc/haproxy/haproxy.cfg
+# restart service
+sudo service haproxy restart
