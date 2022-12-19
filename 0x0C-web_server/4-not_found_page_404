@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A custom 404 page that contains the string Ceci n'est pas une page.
+config="
+	server_name _;
+
+	# define an error page
+	error_page 404 /404.html;
+"
+sudo chmod -R "$USER":"$USER" /etc/nginx/sites-available/
+sudo sed -i "/server_name _;/c\ $config" /etc/nginx/sites-available/default
+echo "Ceci n'est pas une page" > /var/www/html/404.html
