@@ -5,7 +5,7 @@ exec {'sudo chown -R':
 }
 
 exec {'sudo service nginx':
-  command => '/usr/bin/sudo /usr/sbin/service /etc/nginx restart'
+  command => '/usr/bin/sudo /usr/sbin/service nginx restart'
 }
 
 file {'/etc/nginx/sites-available/default':
