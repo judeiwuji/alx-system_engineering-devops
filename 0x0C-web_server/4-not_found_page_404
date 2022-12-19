@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # A custom 404 page that contains the string Ceci n'est pas une page.
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/
-sudo sed -i "/server_name _;/c\ \tserver_name _; \n\t# define an error page \n\terror_page 404 /404.html;" /etc/nginx/sites-available/default
+sudo sed -i "/server_name _;/c\ \tserver_name _;\n\t# define an error page \n\terror_page 404 /404.html;" /etc/nginx/sites-available/default
 sudo chown -R "$USER":"$USER" /var/www/
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 # restart nginx
