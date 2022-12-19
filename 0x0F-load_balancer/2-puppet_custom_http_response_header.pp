@@ -4,8 +4,8 @@ exec {'sudo chown -R':
   command => "/usr/bin/sudo /bin/chown -R ${id}:${id} /etc/nginx/sites-available/"
 }
 
-service {'sudo service nginx':
-  restart => '/usr/bin/sudo service nginx restart'
+exec {'sudo service nginx':
+  command => '/usr/bin/sudo /usr/sbin/service /etc/nginx restart'
 }
 
 file {'/etc/nginx/sites-available/default':
@@ -18,5 +18,5 @@ file {'/etc/nginx/sites-available/default':
   line    => '    server_name _;
     add_header X-Served-By $hostname;',
   match   => 'server_name _;',
-  require => Service['sudo service nginx']
+  require => Exec['sudo service nginx']
 }
