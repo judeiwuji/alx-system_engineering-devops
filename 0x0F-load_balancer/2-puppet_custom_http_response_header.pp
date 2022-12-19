@@ -1,11 +1,11 @@
 # automate the task of creating a custom HTTP header response
-file {'/home/jude/alx-system_engineering-devops/0x0F-load_balancer/test':
+file {'/etc/nginx/sites-available/default':
   ensure => 'present'
 }
 
 -> file_line{'X-Served-By':
   ensure => 'present',
-  path   => '/home/jude/alx-system_engineering-devops/0x0F-load_balancer/test',
+  path   => '/etc/nginx/sites-available/default',
   line   => '    server_name _;
     add_header X-Served-By $hostname;',
   match  => 'server_name _;'
