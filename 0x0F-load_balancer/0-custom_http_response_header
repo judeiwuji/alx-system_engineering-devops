@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Double the number of webservers
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/
-sudo sed -i "/server_name _;/c\ \tserver_name _; \n\tadd_header X-Served-By $hostname;\n\t" /etc/nginx/sites-available/default
+sudo sed -i "/server_name _;/c\ \tserver_name _; \n\tadd_header X-Served-By \$hostname;\n\t" /etc/nginx/sites-available/default
 # restart nginx
 sudo service nginx restart
