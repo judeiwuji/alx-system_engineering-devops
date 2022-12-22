@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#0. Nginx likes port 80
+sudo apt update
+# install nginx package
+sudo apt install nginx -y
+# allow port 80
+sudo ufw allow 'Nginx HTTP'
