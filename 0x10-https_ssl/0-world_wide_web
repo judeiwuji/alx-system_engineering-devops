@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Domain configuration
+
+domain="$1"
+subdomain="$2"
+
+echo $domain $subdomain
