@@ -6,7 +6,7 @@ process ()
   domain="$1"
   subdomain="$2"
   
-  dig "$subdomain"."$domain" | tail -n 7 | head -n 1 | awk -v subdomain="${subdomain}" '{print "The subdomain " subdomain " is a " $4 " record type and points to " $5}'
+  dig "$subdomain"."$domain" | tail -n 7 | head -n 1 | awk -v subdomain="${subdomain}" '{print "The subdomain " subdomain " is a " $4 " record and points to " $5}'
 }
 
 if [ -z "$2" ]
