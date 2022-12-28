@@ -1,7 +1,21 @@
 #!/usr/bin/env bash
 # Domain configuration
 
-domain="$1"
-subdomain="$2"
+process ()
+{
+  domain="$1"
+  subdomain="$2"
+  
+  dig "$subdomain"."$domain" | tail -n 7 | head -n 1 | awk '{print "The subdomain " $1 " is a " $4 " record type and points to " $5}'
+}
 
-echo $domain $subdomain
+if [ -z "$2" ]
+then
+  for subdomain in 'www' 'lb-01' 'web-01' 'web-02'
+  do
+    process "$1" "$subdomain"
+  done
+else
+  process "$1" "$2"
+fi
+
