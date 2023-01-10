@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Run Nginx as Nginx
+chown -R nginx:nginx /etc/nginx/*
+nginx -c /etc/nginx/nginx.conf
+sudo ufw allow http
