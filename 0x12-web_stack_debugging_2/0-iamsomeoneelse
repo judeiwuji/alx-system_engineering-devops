@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # show current user
+apt install runuser -y
 runuser -u "$1" -- whoami
