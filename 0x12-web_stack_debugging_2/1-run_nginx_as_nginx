@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Run Nginx as Nginx
-apt install nginx -y
 sudo ufw allow 'Nginx HTTP'
 chown -R nginx:nginx /etc/nginx/*
 chmod 766 /etc/nginx/nginx.conf
