@@ -4,4 +4,5 @@ apt install nginx -y
 sudo ufw allow 'Nginx HTTP'
 chown -R nginx:nginx /etc/nginx/*
 chmod 766 /etc/nginx/nginx.conf
+sudo sed -i "/listen 80 default_server;/c\ \tlisten 8080 default_server;\n" /etc/nginx/sites-available/default
 sudo -u nginx nginx -c /etc/nginx/nginx.conf
