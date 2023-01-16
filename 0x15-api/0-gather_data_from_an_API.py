@@ -10,10 +10,10 @@ import sys
 
 def main():
     """Entry point"""
-    user_id = int(sys.argv[1])
-    res = requests.get("https://jsonplaceholder.typicode.com/user/{:d}/todos".
+    user_id = sys.argv[1]
+    res = requests.get("https://jsonplaceholder.typicode.com/user/{}/todos".
                        format(user_id))
-    res1 = requests.get("https://jsonplaceholder.typicode.com/users/{:d}".
+    res1 = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(user_id))
     if res.status_code == 200 and res1.status_code == 200:
         tasks = json.loads(res.content)
