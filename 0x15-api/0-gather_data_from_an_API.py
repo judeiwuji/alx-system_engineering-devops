@@ -23,14 +23,14 @@ def main():
         total_tasks = 0
 
         for task in tasks:
-            if task['completed']:
+            if task.get('completed'):
                 total_completed += 1
                 completed_tasks.append(task)
             total_tasks += 1
-        print("Employee {} is done with tasks({:d}/{:d})".
-              format(user['name'], total_completed, total_tasks))
+        print("Employee {} is done with tasks({:d}/{:d}):".
+              format(user.get('name'), total_completed, total_tasks))
         for task in completed_tasks:
-            print("\t {}".format(task['title']))
+            print("\t {}".format(task.get('title')))
 
 
 if __name__ == '__main__':
