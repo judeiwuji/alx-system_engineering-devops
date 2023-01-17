@@ -23,7 +23,7 @@ def main():
             writer = csv.writer(csvfile, delimiter=",", quotechar='"',
                                 quoting=csv.QUOTE_ALL)
             for task in tasks:
-                data = [user_id, user.get('name'), task.get('completed'),
+                data = [user_id, user.get('username'), task.get('completed'),
                         task.get('title')]
                 writer.writerow(data)
 
