@@ -22,7 +22,6 @@ def recurse(subreddit, hot_list=[]):
         record = data_wrapper.get('data')
         title = record.get('children')[0].get('data').get('title')
         next = record.get('after')
-        print(next)
         if next:
             hot_list.append({next: title})
             recurse(subreddit, hot_list)
