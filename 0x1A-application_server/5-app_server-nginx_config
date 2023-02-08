@@ -52,12 +52,12 @@ server {
 	}
 
 	location = /redirect_me {
-	 return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+	 return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; 
 	}
-	# define an error page
+	# define an error page 
 	error_page 404 /404.html;
 	add_header X-Served-By $hostname;
-
+	
 
 	# location / {
 		# First attempt to serve request as file, then
@@ -82,7 +82,7 @@ server {
 	#location ~ /\.ht {
 	#	deny all;
 	#}
-
+	
 	location /airbnb-onepage/ {
 		include proxy_params;
 		proxy_pass http://127.0.0.1:5000;
@@ -92,10 +92,21 @@ server {
 		include proxy_params;
 		proxy_pass http://127.0.0.1:5001/number_odd_or_even/;
 	}
-
+	
 	location /api/ {
 		include proxy_params;
 		proxy_pass http://127.0.0.1:5002/api/v1/;
+	}
+
+	location / {
+		include proxy_params;
+		proxy_pass http://127.0.0.1:5003/2-hbnb/;
+		# try_files $uri $uri/ =404;
+	}
+
+	location /static/ {
+		alias /home/ubuntu/AirBnB_clone_v4/web_dynamic/static/;
+		autoindex off;
 	}
 }
 
